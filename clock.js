@@ -5,7 +5,7 @@ function printTime() {
     const h = date.getHours();
     const m = date.getMinutes();
     const s = date.getSeconds();
-    const time = `${h}:${m}:${s.toString().padStart(2, '0')}`;
+    const time = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
     const text = document.createTextNode(time);
     const h1 = document.createElement('h1');
     h1.appendChild(text);
